@@ -1,0 +1,65 @@
+{
+  "components": {
+    "plugins": {
+      "GenerateGLM": {
+        "src": "src/plugins/GenerateGLM",
+        "test": "test/plugins/GenerateGLM"
+      },
+      "SimulateWithGridlabD": {
+        "src": "src/plugins/SimulateWithGridlabD",
+        "test": "test/plugins/SimulateWithGridlabD"
+      },
+      "ImportGLM": {
+        "src": "src/plugins/ImportGLM",
+        "test": "test/plugins/ImportGLM"
+      },
+      "UpdateGLDMeta": {
+        "src": "src/plugins/UpdateGLDMeta",
+        "test": "test/plugins/UpdateGLDMeta"
+      },
+      "SimulateTES": {
+        "src": "src/plugins/SimulateTES",
+        "test": "test/plugins/SimulateTES"
+      },
+      "SimulateTESCluster": {
+        "src": "src\\plugins\\SimulateTESCluster",
+        "test": "test\\plugins\\SimulateTESCluster"
+      }
+    },
+    "addons": {
+      "AttributeConverter": {
+        "src": "src/addons/AttributeConverter"
+      }
+    },
+    "visualizers": {},
+    "decorators": {
+      "HLADecorator": {
+        "src": "src/decorators/HLADecorator"
+      }
+    },
+    "layouts": {},
+    "seeds": {}
+  },
+  "dependencies": {
+    "plugins": {
+      "GenFORMULA": {
+        "project": "formula",
+        "path": "node_modules/formula/src/plugins/GenFORMULA"
+      }
+    },
+    "addons": {},
+    "visualizers": {
+      "FormulaEditor": {
+        "src": "panels/FormulaEditor/FormulaEditorPanel",
+        "title": "FormulaEditor",
+        "panel": "src/visualizers/panels/FormulaEditor",
+        "secondary": false,
+        "widget": "src/visualizers/widgets/FormulaEditor",
+        "project": "formula"
+      }
+    },
+    "decorators": {},
+    "layouts": {},
+    "seeds": {}
+  }
+}

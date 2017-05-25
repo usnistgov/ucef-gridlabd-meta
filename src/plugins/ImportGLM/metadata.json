@@ -1,0 +1,54 @@
+{
+    "id": "ImportGLM",
+    "name": "ImportGLM",
+    "version": "0.1.0",
+    "description": "",
+    "icon": {
+	"class": "glyphicon glyphicon-cog",
+	"src": ""
+    },
+    "disableServerSideExecution": true,
+    "disableBrowserSideExecution": false,
+    "configStructure": [
+        {
+            "name": "logDebug",
+            "displayName": "Enable debug output.",
+            "description": "Outputs debug log from the parser / importer.",
+            "value": false,
+            "valueType": "boolean",
+            "readOnly": false
+        },
+        {
+            "name": "iterations",
+            "displayName": "Number of iterations for layout algorithm.",
+            "description": "Iterations for running the cola layout algorithm.",
+            "value": 20,
+            "valueType": "integer",
+            "readOnly": false
+        },
+        {
+            "name": "linkDistance",
+            "displayName": "Average distance for links in the graph.",
+            "description": "Smaller for smaller graphs, larger for larger graphs.",
+            "value": 100,
+            "valueType": "integer",
+            "readOnly": false
+        },
+        {
+            "name": "nodeSize",
+            "displayName": "Side length of a node.",
+            "description": "Used in the layout algorithm, shouldn't need to be changed.",
+            "value": 64,
+            "valueType": "integer",
+            "readOnly": false
+        },
+        {
+            "name": "glmFile",
+            "displayName": "Gridlab-D model file.",
+            "description": "Gridlab-D GLM file containing the power system model to be loaded into WebGME.",
+            "value": "",
+            "valueType": "asset",
+            "readOnly": false
+        }
+    ]
+}

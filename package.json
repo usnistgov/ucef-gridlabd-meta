@@ -1,0 +1,30 @@
+{
+  "name": "gridlabd",
+  "scripts": {
+    "start": "node app.js",
+    "test": "node ./node_modules/mocha/bin/mocha --recursive test"
+  },
+  "version": "1.0.0",
+  "dependencies": {
+    "cola": "^0.1.7",
+    "d3": "^3.5.17",
+    "filendir": "^1.0.0",
+    "formula": "webgme/formula",
+    "fstream": "^1.0.9",
+    "http": "0.0.0",
+    "jsdom": "^9.1.0",
+    "mustache": "^2.2.1",
+    "path": "^0.12.7",
+    "scp2": "^0.5.0",
+    "ssh2": "^0.5.2",
+    "tar": "^2.2.1",
+    "underscore": "^1.8.3",
+    "unzip": "^0.1.11",
+    "webgme": "^2.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.5",
+    "rimraf": "^2.4.0",
+    "chai": "^3.0.0"
+  }
+}
